@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<h6 class="subtitle">이벤트 조회</h6>
+		<table cellpadding="0" cellspacing="0">
+            <colgroup>
+                <col width="10%" />
+                <col width="16%" />
+                <col width="10%" />
+                <col width="*%" />
+                <col width="10%" />
+                <col width="16%" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th class="C">작성자</th>
+                    <td class="L"><label for="writer"></label><input type="text" class="w100per" id="writer" name="writer" /></td>
+                    <th class="C">등록일</th>
+                    <td class="L"><input type="text" id="alarm_start" name="alarm_start" class="w150 date" /><label for="alarm_start"></label> ~ <input type="text" id="alarm_end" name="alarm_end" class="w150 date" /><label for="alarm_end"></label>
+                    </td>
+                    <th class="C">카테고리</th>
+                    <td class="L">
+                       <div class="inputbox w100per">
+							<p class="txt"></p>
+							<select>
+								<option></option>
+							</select>
+						</div> 
+                    </td>
+                </tr>
+                <tr>
+                    <th class="C">상태</th>
+                    <td class="L">
+						<div class="inputbox w100per">
+							<p class="txt"></p>
+							<select>
+								<option></option>
+							</select>
+						</div> 
+                    </td>
+                    <th class="C">행사명</th>
+                    <td class="L"><label for="title"></label><input type="text" class="w100per" id="title" name="title" /></td>
+                    <th class="C">기관정보</th>
+                    <td class="L">
+						<div class="inputbox w100per">
+							<p class="txt"></p>
+							<select>
+								<option></option>
+							</select>
+						</div> 
+                    </td>
+                </tr>
+                <tr>
+                    <th class="C">주요이벤트</th>
+                    <td class="L">
+						<label for="checkbox_01"></label><input name="check01" type="checkbox" class="mrl0" id="checkbox"/>
+                    </td>
+                    <th class="C">신분</th>
+                    <td class="L">
+						<label for="person_level"></label><input type="text" class="fl w200 mrr5" id="person_level" name="person_level"/><a href="#" class="btn_gray"><span>선택</span></a>
+                    </td>
+                    <td class="R" colspan="2">
+                    	<a href="#" class="btn_darkblue"><span>검색</span></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+		<!-- table_top -->
+		<div class="table_top mrt15">
+			<div class="fr">
+				<a href="#" class="btn_gray"><span>참여인원순보기</span></a>
+				<a href="#" class="btn_white"><span>삭제</span></a>
+			</div>
+		</div>
+		<!-- list -->
+		<table cellpadding="0" cellspacing="0" class="event">
+			<colgroup>
+				<col width="6%" />
+				<col width="6%" />
+				<col width="6%" />
+				<col width="9%" />
+				<col width="*%" />
+				<col width="10%" />
+				<col width="10%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><input type="checkbox" id="check_all" name="check_all" /><label for="check_all"></label></th>
+					<th class="C">NO</th>
+					<th class="C">상태</th>
+					<th class="C">카테고리</th>
+					<th class="C">이벤트정보</th>
+					<th class="C">등록일</th>
+					<th class="C">참여인원</th>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_01" name="checkbox_01" /><label for="checkbox_01"></label></td>
+					<td class="C">1</td>
+					<td class="C">승인</td>
+					<td class="C">스포츠</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/18</td>
+					<td class="C"><a href="#">2/10</a></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_02" name="checkbox_02" /><label for="checkbox_02"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_03" name="checkbox_03" /><label for="checkbox_03"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_04" name="checkbox_04" /><label for="checkbox_04"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_05" name="checkbox_05" /><label for="checkbox_05"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_06" name="checkbox_06" /><label for="checkbox_06"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_07" name="checkbox_07" /><label for="checkbox_07"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"><a href="#">2/10</a></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_08" name="checkbox_08" /><label for="checkbox_08"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"><a href="#">2/10</a></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_09" name="checkbox_09" /><label for="checkbox_09"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"><a href="#">2/10</a></td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_10" name="checkbox_10" /><label for="checkbox_10"></label></td>
+					<td class="C">2</td>
+					<td class="C">승인</td>
+					<td class="C">전시</td>
+					<td class="L"><p>체력단련장 이벤트 / 자연과학대학(25-1동) / 정보화본부 이주형 / 2018/01/01 ~ 2019/12/10</p></td>
+					<td class="C">2018/12/10</td>
+					<td class="C"></td>
+				</tr>
+			</tbody>
+		</table>
+	   <div class="tcontrol mrt15">
+			<div class="paging">
+				<a href="#"><img src="images/sub/page_first.png" alt="첫페이지로이동" /></a><a href="#"><img src="images/sub/page_prev.png" alt="이전페이지로이동" /></a><a href="#" class="on">11</a><a href="#">12</a><a href="#">13</a><a href="#">14</a><a href="#">15</a><a href="#">16</a><a href="#">17</a><a href="#">18</a><a href="#">19</a><a href="#">20</a><a href="#"><img src="images/sub/page_next.png" alt="다음페이지로이동" /></a><a href="#"><img src="images/sub/page_last.png" alt="마지막페이지로이동" /></a>
+			</div>
+		</div>
+    
+    
+</div>
+</body>
+</html>
+
+
+
+

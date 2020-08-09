@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header .top ul li a.btn_logout{width:64px !important;}
+#header .top ul li a.btn_logout span{font-size:13px;}
+#header .top ul li{margin:0 5px !important;}
+#header .top ul li a{font-size:13px !important;}
+
+#header .gnb > li{margin-right:15px !important;}
+#header .gnb > li > a{font-size:15px !important;}
+.quickserviceArea .quickservice ul li span.txt{font-size:13px !important;}
+
+.allmenu .wrap > ul > li > a > span{font-size:15px !important;}
+.allmenu ul > li > ul > li{line-height:16px!important; font-size:13px !important;}
+.allmenu ul > li > ul > li a:hover{font-size:13px !important; font-weight:400 !important; }
+
+
+.fixArea .profile .btnArea a{font-size:14px !important; height:32px !important; line-height:16px !important; margin:7px 0 !important; padding:0 17px !important;}
+.fixArea .profile .btnArea a.first{line-height:32px !important;}
+
+.calendar ul.tab li{padding:0 21px 0 23px !important;}
+.notice_list li span.title{font-size:14px !important;}
+.normal_list li span.title{font-size:14px !important;}
+.notice_list li span.date{font-size:14px !important;}
+
+.banner .flexslider1 ul li .contents h4{font-size:20px !important;}
+.banner .flexslider1 ul li .contents h4 span{font-size:16px !important; font-weight:400;}
+.banner .flexslider1 ul li .contents p{font-size:14px !important;} 
+
+.lnb h2{line-height:34px; padding:25px 20px 0 21px;}

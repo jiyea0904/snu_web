@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<div class="table_top">
+			<div class="fr">
+				<a href="#" class="btn_white"><span>삭제</span></a>
+				<a href="#" class="btn_darkblue"><span>등록</span></a>
+				<a href="#" class="btn_gray"><span>목록</span></a>
+			</div>
+		</div>
+		<table cellpadding="0" cellspacing="0">
+			<colgroup>
+				<col width="15%" />
+				<col width="85%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><span class="import">제목</span></th>
+					<td class="L"><input type="text" id="title" name="title" class="w100per" /><label for="title"></label></td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">공개여부</span></th>
+					<td class="L">
+						<input type="radio" id="team" name="open" class="first" /><label for="team">소속부서 공개</label>
+						<input type="radio" id="join" name="open" /><label for="join">참석자에게만 공개</label>
+					</td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">카테고리</span></th>
+					<td class="L">
+						<div class="inputbox w400">
+							<p class="txt"></p>
+							<select>
+								<option>학사</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">일시</span></th>
+					<td class="L">
+						<div class="date">
+							<input type="text" id="date_start" name="date_start" class="w150 date" value="2018.06.18(수)" /><label for="date_start"></label>
+							<span><input type="checkbox" id="allday" name="allday" /><label for="allday">종일</label></span>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>16시</option>
+								</select>
+							</div>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+						</div>
+						<span class="fl mrr5">~</span>
+						<div class="date">
+							<input type="text" id="date_end" name="date_end" class="w150 date" value="2018.06.18(수)" /><label for="date_end"></label>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>16시</option>
+								</select>
+							</div>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">알림</th>
+					<td class="L">
+						<span class="fl mrr5"><input type="checkbox" id="alarm" name="alarm" class="first" /><label for="alarm">알림사용</label></span>
+						<div class="fl date">
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>01시</option>
+								</select>
+							</div>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+							<span>전</span>
+						</div>
+						<input type="checkbox" id="alarm_email" name="alarm_email" /><label for="alarm_email">이메일</label>
+						<input type="checkbox" id="alarm_apppush" name="alarm_apppush" /><label for="alarm_apppush">서울대앱푸시</label>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">공간</th>
+					<td class="L">
+						<input type="text" id="area" name="area" value="공간을 입력하세요." class="w200 fl mrr5" /><label for="area"></label><a href="#" class="btn_darkblue search fl"><span>공간검색</span></a>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">대상자</th>
+					<td class="L">
+						<a href="#" class="btn_gray"><span>외부인 추가</span></a>
+						<div class="personList mrt5">
+							<span>장길산1 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산2 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산3 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산4 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산5 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>장길산6 / 정보화팀 <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+							<span>asdfsdf@naver.com <a href="#" class="btn_delete"><img src="images/sub/delete_reply.png" alt="삭제" /></a></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="L" colspan="2">
+						<h6 class="subtitle">공간 및 대상자 일정 미리보기</h6>
+						<div class="table_top">
+							<div class="fl">
+								<a href="#" class="btn_white"><span>삭제</span></a>
+								<a href="#" class="btn_darkblue"><span>+ 일정에 추가</span></a>
+							</div>
+							<div class="fr">
+								<input type="text" id="date" name="date" class="fl w150 date mrr5" value="2018.06.18(수)" /><label for="date"></label>
+								<a href="#" class="btn_orange"><span>공간 추가</span></a>
+								<a href="#" class="btn_purple"><span>참여자 추가</span></a>
+							</div>
+						</div>
+						<div class="table_wrap">
+							<table cellpadding="0" cellspacing="0" class="scehdule_table">
+								<tbody>
+									<tr>
+										<th rowspan="2" class="first"><span>공간/대상자</span><span>시간</span></th>
+										<th colspan="2" class="clock">01시</th>
+										<th colspan="2" class="clock">02시</th>
+										<th colspan="2" class="clock">03시</th>
+										<th colspan="2" class="clock">04시</th>
+										<th colspan="2" class="clock">05시</th>
+										<th colspan="2" class="clock">06시</th>
+										<th colspan="2" class="clock">07시</th>
+										<th colspan="2" class="clock">08시</th>
+										<th colspan="2" class="clock">09시</th>
+										<th colspan="2" class="clock">10시</th>
+										<th colspan="2" class="clock">11시</th>
+										<th colspan="2" class="clock">12시</th>
+										<th colspan="2" class="clock">13시</th>
+										<th colspan="2" class="clock">14시</th>
+										<th colspan="2" class="clock">15시</th>
+										<th colspan="2" class="clock">16시</th>
+										<th colspan="2" class="clock">17시</th>
+										<th colspan="2" class="clock">18시</th>
+										<th colspan="2" class="clock">19시</th>
+										<th colspan="2" class="clock">20시</th>
+										<th colspan="2" class="clock">21시</th>
+										<th colspan="2" class="clock">22시</th>
+										<th colspan="2" class="clock">23시</th>
+										<th colspan="2" class="clock">24시</th>
+									</tr>
+									<tr>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+										<th>00</th>
+										<th>30</th>
+									</tr>
+								</tbody>
+							</table>
+							<table cellpadding="0" cellspacing="0" class="scehdule_table orange mrt10">
+								<tbody>
+									<tr>
+										<th class="first"><span><input type="checkbox" id="area01" name="area01" /><label for="area01">2동 1호</label></span></th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th class="first"><span><input type="checkbox" id="area02" name="area02" /><label for="area02">2동 2호</label></span></th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th class="first"><span><input type="checkbox" id="area03" name="area03" /><label for="area03">3동 1호</label></span></th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+							<table cellpadding="0" cellspacing="0" class="scehdule_table purple mrt10">
+								<tbody>
+									<tr>
+										<th class="first"><input type="checkbox" id="person01" name="person01" /><span><label for="person01">홍길동<br/>(my ID)</label></span></th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th class="first"><input type="checkbox" id="person02" name="person02" /><span><label for="person02">장길산<br/>(my ID)</label></span></th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th class="first"><input type="checkbox" id="person03" name="person03" /><span><label for="person03">임꺽정<br/>(my ID)</label></span></th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="on"></td>
+										<td class="on"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th class="first"><input type="checkbox" id="person04" name="person04" /><span><label for="person04">홍경래<br/>(my ID)</label></span></th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="check_time">
+								<div class="bg"></div>
+								<span>미팅일정</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="mrt10">
+			<colgroup>
+				<col width="15%" />
+				<col width="35%" />
+				<col width="15%" />
+				<col width="35%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><span class="import">내용</span></th>
+					<td class="L" colspan="3"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<th class="C">관련문서</th>
+					<td class="L" colspan="3">
+						<div class="addFile">
+							<div class="filelist">
+								<p>파일은 10개까지 첨부할 수 있으며, 전체 용량은 100Mbyte를 넘을 수 없습니다.</p>
+								<select name="select" multiple="multiple" id="select">
+									<option>업무요청파일(10Byte)</option>
+								</select>
+							</div>
+							<input type="file" name="fileField" title="파일첨부" class="filefield" id="fileField" />
+							<div class="fl mrt10">
+								<a href="#" class="btn_white"><span>파일추가 +</span></a> <a href="#" class="btn_white"><span>파일삭제 -</span></a>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="table_bottom">
+			<div class="fr">
+				<a href="#" class="btn_white"><span>삭제</span></a>
+				<a href="#" class="btn_darkblue"><span>등록</span></a>
+				<a href="#" class="btn_gray"><span>목록</span></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

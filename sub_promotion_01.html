@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<!-- tsearchArea -->
+		<div class="tsearchArea">
+			<div class="fl">
+				<span class="title">등록일자</span>
+				<input type="text" id="date_start" name="date_start" class="fl date w150" /><label for="date_start"></label>
+				<span class="fl">~</span>
+				<input type="text" id="date_end" name="date_end" class="fl date w150" /><label for="date_end"></label>
+			</div>
+			<div class="fl mrl10">
+				<span class="title">프로모션명</span>
+				<input type="text" id="title" name="title" class="fl w300 mrr5 " /><label for="title"></label>
+				<a href="#" class="btn_darkblue"><span>검색</span></a>
+			</div>
+		</div>
+		<!-- tsearchArea //-->
+		<div class="table_top">
+			<div class="fl">
+				<p class="mrr5">총 <em>1</em>건 (<em>1/1</em>)</p>
+			</div>
+			<div class="fr">
+				<a href="#" class="btn_white"><span>추가</span></a>
+				<a href="#" class="btn_white"><span>삭제</span></a>
+			</div>
+		</div>
+		<table cellpadding="0" cellspacing="0" class="areatable">
+			<colgroup>
+				<col width="8%" />
+				<col width="10%" />
+				<col width="*%" />
+				<col width="20%" />
+			</colgroup>
+			<thead>
+				<th class="C"><input type="checkbox" id="check_all" name="check_all" /><label for="check_all"></label></th>
+				<th class="C">NO</th>
+				<th class="C">제목</th>
+				<th class="C">등록일</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="C"><input type="checkbox" id="check_01" name="check_01" /><label for="check_01"></label></td>
+					<td class="C">1</td>
+					<td class="L"><a href="#"><span class="title">11133331113333111333311133331113333111333311133331113333111333311133331113333</span></a></td>
+					<td class="C">2018-12-27</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="tcontrol mrt15">
+			<a href="#" class="btn_more w100per"><span>더보기 +</span></a>
+			<div class="paging">
+				<a href="#"><img src="images/sub/page_first.png" alt="첫페이지로이동" /></a><a href="#"><img src="images/sub/page_prev.png" alt="이전페이지로이동" /></a><a href="#" class="on">11</a><a href="#">12</a><a href="#">13</a><a href="#">14</a><a href="#">15</a><a href="#">16</a><a href="#">17</a><a href="#">18</a><a href="#">19</a><a href="#">20</a><a href="#"><img src="images/sub/page_next.png" alt="다음페이지로이동" /></a><a href="#"><img src="images/sub/page_last.png" alt="마지막페이지로이동" /></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

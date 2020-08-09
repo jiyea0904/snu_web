@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("common.css");
+
+#login{position:relative; min-width:1260px; background:url("../images/login/right_bg.gif") repeat-x left top;}
+
+.leftBg{position:absolute; top:0; left:0; width:50%; min-width:610px; height:1208px; background:url("../images/login/left_bg.gif") no-repeat left top; z-index:-1; background-size:100%;}
+.leftBg .link_bg{position:absolute; bottom:0; left:0; width:100%; min-width:610px; height:167px; background-color:#23316e; z-index:-1;}
+
+#login .wrap{width:1260px;}
+.leftArea{float:left; width:630px;  z-index:1; box-sizing:border-box; padding:50px 0 0 0;}
+.rightArea{position:relative; float:right; width:630px; box-sizing:border-box; background:url("../images/login/right_bg.gif") repeat-x left top; padding:50px 0 0 0; z-index:1;}
+
+.leftArea h1{display:inline-block;}
+.leftArea fieldset.search{float:right; display:inline-block; width:282px; height:42px; line-height:42px; box-sizing:border-box; border-bottom:1px solid #fff; margin-right:30px;}
+.leftArea fieldset.search > input[type="text"]{float:left; display:inline-block; width:250px; height:41px; line-height:41px; font-size:15px; color:#fff; font-weight:300; box-sizing:border-box; border:none; padding:0; background:none;}
+.leftArea fieldset.search .btn_search{float:left; margin-top:10px;}
+
+.leftArea .visualArea{display:none; position:relative; margin-top:70px;}
+.leftArea .visualArea h3{position:absolute; top:235px; left:85px; height:50px; line-height:50px; font-size:22px; color:#fff; font-weight:300; letter-spacing:-1px;}
+.leftArea .visualArea h3 span{font-size:30px; color:#fff; font-weight:600; margin-left:10px; letter-spacing:-2px;}
+.leftArea .visualArea .visualLink{position:relative; width:610px; height:770px; background:url("../images/login/visual_bg.png") no-repeat center top;}
+.leftArea .visualArea .visualLink li{position:absolute; display:inline-block; width:71px; height:71px; box-sizing:border-box; text-align:center;}
+.leftArea .visualArea .visualLink li a{display:inline-block; width:100%; height:100%; line-height:18px; padding:18px 8px; box-sizing:border-box; border-radius:6px; font-size:15px; color:#fff; word-break:break-all;}
+.leftArea .visualArea .visualLink li.green a{background:url("../images/login/bg_green.png") left top;}
+.leftArea .visualArea .visualLink li.darkblue a{background:url("../images/login/bg_darkblue.png") left top;}
+.leftArea .visualArea .visualLink li.white a{background:url("../images/login/bg_white.png") left top; color:#000;}
+.leftArea .visualArea .visualLink li.yellow a{background:url("../images/login/bg_yellow.png") left top; color:#000;}
+.leftArea .visualArea .visualLink li.ygreen a{background:url("../images/login/bg_ygreen.png") left top;}
+.leftArea .visualArea .visualLink li.purple a{background:url("../images/login/bg_purple.png") left top;}
+
+.vet{left:114px; top:41px;}
+.denti{left:197px; top:60px;}
+.gspa{left:281px; top:41px;}
+.che{left:273px; top:125px;}
+.health{left:366px; top:11px;}
+.gsis{left:368px; top:95px;}
+.social{left:356px; top:180px;}
+.art{left:442px; top:160px;}
+.art a{line-height:36px !important;}
+.medicine{right:12px; top:140px;}
+.medicine a{line-height:36px !important;}
+.music{left:356px; top:265px;}
+.music a{line-height:36px !important;}
+.law{right:182px; top:347px;}
+.humanities{right:97px; top:339px;}
+.humanities a{line-height:36px !important;}
+.edu{right:12px; top:380px;}
+.edu a{line-height:36px !important;}
+.cns{right:181px; top:432px;}
+.pharm{right:181px; bottom:181px;}
+.pharm a{line-height:36px !important;}
+.cals{left:175px; bottom:201px;}
+.gses{left:127px; bottom:96px;}
+.nursing{left:210px; bottom:118px;}
+.nursing a{line-height:36px !important;}
+.gsb{left:293px; bottom:96px;}
+.eng{right:160px; bottom:96px;}
+.eng a{line-height:36px !important;}
+.agricultural{left:32px; bottom:22px;}
+.agricultural a {padding:9px 8px !important;}
+.gscst{left:116px; bottom:14px;}
+.gscst a {padding:9px 8px !important;}
+.unite{right:227px; bottom:14px;}
+.cba{right:142px; bottom:4px;}
+.cba a{line-height:36px !important;}
+
+.promotionArea{position:relative; width:610px; height:770px; margin-top:70px;}
+.promotionArea .bg{background-color:#000; opacity:0.4; position:absolute; top:0; left:0; display:inline-block; width:100%; height:100%; z-index:-1;}
+.promotionArea .promotion{padding:15px; width:580px; height:700px;}
+.promotionArea .promotion table{width:100%;}
+.promotionArea .promotion h3{height:50px; line-height:50px; font-size:20px; color:#fff; font-weight:400; text-align:center;}
+.promotionArea .promotion table{border-top:1px solid #fff; margin-top:10px;}
+.promotionArea .promotion table thead th{height:40px; line-height:38px; border-bottom:1px solid #8f8e94; font-size:15px; padding:0 5px; text-align:center; font-weight:400; color:#fff;}
+.promotionArea .promotion table th{line-height:20px; border-bottom:1px solid #8f8e94; font-size:14px; padding:5px; text-align:center; font-weight:400; color:#fff;}
+.promotionArea .promotion table td{line-height:20px; border-bottom:1px solid #8f8e94; font-size:14px; padding:5px; text-align:center; font-weight:300; color:#f0f0f0;}
+.promotionArea .promotion p.close{height:30px; line-height:30px; margin-top:10px;}
+.promotionArea .btn_close{float:right; background:url("../images/login/btn_close.png") no-repeat right center; padding-right:20px; display:inline-block; height:30px; line-height:30px; margin-right:5px;}
+.promotionArea .btn_close span{font-size:16px; color:#fff;}
+.flexslider3 .flex-control-nav{position:absolute; top:0; left:0;}
+.flex-control-nav{margin:15px;}
+.flex-control-nav li{float:left; margin:0 2px;}
+.flex-control-nav li a{display:inline-block; width:10px; height:10px; text-indent:-9999px; background:url(../images/main/bullet_page.png) no-repeat center center;}
+.flex-control-nav li a.flex-active{display:inline-block; width:10px; height:10px; text-indent:-9999px; background:url(../images/main/bullet_page_on.png) no-repeat center center;}
+
+
+
+.flexslider1{position:absolute; top:300px; left:60px; display:inline-block; width:277px; height:151px; border-radius:7px;}
+.flexslider1 ul li img{border-radius:7px;}
+
+.quicklinkList{background:url("../images/login/quicklink_bg.gif") no-repeat right bottom #23316e; padding:10px 30px; box-sizing:border-box; margin-top:105px;}
+.quicklinkList:after{clear:both; display:block; content:"";}
+.quicklinkList li{float:left; width:33.3%; height:34px; line-height:34px; box-sizing:border-box; background:url("../images/login/bullet_white.gif") no-repeat left center; padding-left:8px; }
+.quicklinkList li a{font-size:16px; color:#fff; font-weight:400;}
+.quicklinkList li a:hover{font-size:16px; color:#8796dd; font-weight:500;}
+
+
+.rightArea h2{margin-left:50px;}
+.rightArea .language{position:absolute; top:50px; right:20px; background:url("../images/login/bg_language.png") no-repeat left center; display:inline-block; width:187px; height:41px; padding:3px; box-sizing:border-box;}
+.rightArea .language li{float:left; display:inline-block; width:50%; height:37px; line-height:34px; text-align:center;}
+.rightArea .language li a{font-size:15px; color:#636363; display:inline-block; width:100%; height:100%;}
+.rightArea .language li.on a{background-color:#23316e; font-weight:500; color:#fff; border-radius:50px;}
+
+.loginArea{width:560px; height:320px; margin:30px 20px 0 50px;}
+.loginArea fieldset{width:560px;}
+.loginArea fieldset p{font-size:14px; font-weight:300; color:#888888;}
+.loginArea ul{float:left; display:inline-block; width:310px; height:112px;}
+.loginArea ul li{height:48px; line-height:46px; margin-top:8px;}
+.loginArea ul li input{display:inline-block; width:100%; height:48px; border:1px solid #d3d3d3; font-size:15px; color:#888888; font-weight:300; padding:15px; box-sizing:border-box; border-radius:4px;}
+.loginArea .btn_login{float:left; background-color:#23316e; display:inline-block; width:104px; height:104px; line-height:104px; text-align:center; margin:8px 0 0 8px; box-sizing:border-box; border-radius:4px;}
+.loginArea .btn_login span{font-size:18px; color:#fff; font-weight:400;}
+.loginArea .btn_certilogin{background-color:#02acc4; display:inline-block; width:130px; height:104px; line-height:104px; text-align:center; margin:8px 0 0 8px; box-sizing:border-box; border-radius:4px; padding:28px 20px;}
+.loginArea .btn_certilogin span{line-height:24px; font-size:18px; color:#fff; font-weight:400;}
+
+.loginArea .loginservice p{height:50px; line-height:50px;}
+.loginArea .loginservice .btn_arr_green{background:url("../images/login/arr_green.png") no-repeat right center; display:inline-block; padding-right:30px;}
+.loginArea .loginservice .btn_arr_green span{font-size:16px; color:#02acc4; font-style:italic;}
+.loginArea .loginservice .right{float:right;}
+.loginArea .loginservice .btn_arr{background:url("../images/login/arr_gray.png") no-repeat right center; display:inline-block; padding-right:30px; margin-left:20px;}
+.loginArea .loginservice .btn_arr span{font-size:16px; color:#666666; font-style:italic;}
+.loginArea .loginservice .join_id{border-top:1px dashed #bcbcbc; background:url("../images/login/icon_join.png") no-repeat left center; padding:0 0 0 23px; font-size:15px; color:#666;}
+.loginArea .loginservice .join_id span{float:left; display:inline-block;}
+.loginArea .loginservice .join_id a{float:right; color:#000; text-decoration:underline;}
+.loginArea .loginservice .btn_parentservice{background-color:#b2ba59; display:inline-block; width:100%; height:46px; line-height:46px; text-align:center; box-sizing:border-box; border-radius:4px;}
+.loginArea .loginservice .btn_parentservice span{font-size:18px; color:#fff; font-weight:400;}
+
+.iconLinkArea{width:580px; height:140px; padding:30px 0; box-sizing:border-box; margin:0 0 0 50px;}
+.iconLinkArea:after{clear:both; display:block; content:"";}
+.iconLinkArea li{float:left; width:33.3%;}
+.iconLinkArea li span{float:left; line-height:24px; font-size:20px; font-weight:300; color:#333; padding:16px 0;}
+.iconLinkArea li.map span{line-height:48px;}
+.iconLinkArea li span.icon{float:left; background-color:#f5f6fb; display:inline-block; width:80px; height:80px; border-radius:100px; box-sizing:border-box; padding:0; margin-right:10px;}
+.iconLinkArea li a:hover span{color:#00397f; font-weight:400;}
+
+.noticeArea{position:relative; width:560px; height:294px; padding:30px 0; box-sizing:border-box; margin:0 20px 0 50px;}
+.noticeArea .tab_title:after{clear:both; display:block; content:"";}
+.noticeArea .tab_title li{float:left; height:30px; line-height:30px; background:url("../images/login/bullet_gray.gif") no-repeat left center; padding:0 8px 0 10px;}
+.noticeArea .tab_title li.first{background:none; padding-left:0;}
+.noticeArea .tab_title li a{font-size:18px; color:#787878; font-weight:300;}
+.noticeArea .tab_title li.tab_on a{color:#00397f; font-weight:400;}
+.noticeArea .none{display:none;}
+.noticeArea .tab_content{margin-top:10px;}
+.noticeArea .tab_content div a.btn_more{position:absolute; right:0; top:35px; font-size:15px; font-weight:400; color:#0f3e8e;}
+.notice_list li{display:block; width:100%; height:32px; line-height:32px; background:url(../images/login/bullet_gray.gif) no-repeat left center; padding-left:12px; box-sizing:border-box;}
+.notice_list li:after{clear:both; display:block; content:"";}
+.notice_list li span.title{float:left; max-width:400px; height:32px; line-height:32px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:15px; color:#787878; font-weight:300;}
+.notice_list li a:hover span.title{color:#000; font-weight:400;}
+.notice_list li span.date{float:right; display:inline-block; height:32px; line-height:32px; background:url(../images/main/bullet_date.png) no-repeat left center; padding-left:20px; font-size:15px; color:#9d9d9d; font-weight:300;}
+
+.serviceLink{width:620px; padding:0 !important; margin:35px 0 0 10px;}
+.serviceLink .flexslider2{position:relative; width:310px; height:258px;}
+.serviceLink .flexslider2 .flex-viewport{width:620px; height:258px;}
+.serviceLink .flexslider2 ul li{float:left; width:290px !important; height:258px !important; margin-left:20px;}
+.serviceLink .flexslider2 ul li .contents{width:290px; height:258px; background:url(../images/main/banner_bg.gif) no-repeat center; text-align:right; padding:20px 30px; box-sizing:border-box;}
+.serviceLink .flexslider2 ul li .contents h4{line-height:28px; font-size:25px; color:#fff; font-weight:500; margin-top:5px}
+.serviceLink .flexslider2 ul li .contents h4 span{display:block; font-size:20px; }
+.serviceLink .flexslider2 ul li .contents p{margin-top:20px; line-height:20px; font-size:15px; color:#fff; font-weight:300;}
+
+
+#login #footer .copyright{margin:0 !important; padding:25px 0; background-color:#414141;}
+#login #footer .copyright ul li{color:#fff;}
+

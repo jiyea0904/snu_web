@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board myset">
+		<h6 class="subtitle">SNU 톡설정</h6>
+		<p>선택된 항목에 SNU 톡 알림 기능을 설정합니다.</p>
+		<table cellpadding="0" cellspacing="0">
+            <colgroup>
+                <col width="25%" />
+                <col width="75%" />
+            </colgroup>
+            <tbody>
+				<tr>
+					<th class="C">알림 허용</th>
+					<td class="L">
+						<input type="checkbox" id="groupware"  name="groupware" class="first" /><label for="groupware">그룹웨어</label>
+						<input type="checkbox" id="messanger"  name="messanger" /><label for="messanger">쪽지</label>
+						<input type="checkbox" id="mail"  name="mail" /><label for="mail">웹메일</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h6 class="subtitle mrt15">전자결재 메뉴 설정</h6>
+		<p>전자결재 화면 팝업 여부를 설정합니다.</p>
+		<table cellpadding="0" cellspacing="0">
+            <colgroup>
+                <col width="25%" />
+                <col width="75%" />
+            </colgroup>
+            <tbody>
+				<tr>
+					<th class="C">전자결재 팝업설정</th>
+					<td class="L">
+						<input type="checkbox" id="approval"  name="approval" class="first" /><label for="approval">전자결재 새창으로 열기</label>
+						<p>팝업설정은 <em>재로그인</em> 시에 적용 됩니다.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h6 class="subtitle mrt15">대량메일 수신 거부 설정</h6>
+		<p>대량메일 수신 거부 여부를 설정합니다.</p>
+		<table cellpadding="0" cellspacing="0">
+            <colgroup>
+                <col width="25%" />
+                <col width="75%" />
+            </colgroup>
+            <tbody>
+				<tr>
+					<th class="C">수신거부설정</th>
+					<td class="L">
+						<input type="checkbox" id="no_send"  name="no_send" class="first" /><label for="no_send">수신거부</label>
+						<a href="#" class="fr btn_gray"><span>수신거부 목록보기</span></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btnArea mrt15">
+			<div class="C">
+				<a href="#" class="btn_darkblue"><span>설정</span></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+

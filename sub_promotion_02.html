@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<div class="table_top">
+			<div class="fr">
+				<a href="#" class="btn_white"><span>수정</span></a>
+				<a href="#" class="btn_white"><span>삭제</span></a>
+				<a href="#" class="btn_gray"><span>목록</span></a>
+			</div>
+		</div>
+		<table cellpadding="0" cellspacing="0">
+			<colgroup>
+				<col width="15%" />
+				<col width="85%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><span class="import">제목(국문)</span></th>
+					<td class="L"><input type="text" id="title_ko" name="title_ko" class="w100per" /><label for="title_ko"></label></td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">제목(영문)</span></th>
+					<td class="L"><input type="text" id="title_en" name="title_en" class="w100per" /><label for="title_en"></label></td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">내용(국문)</span></th>
+					<td class="L"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<th class="C">내용(영문)</th>
+					<td class="L"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<th class="C">사진</th>
+					<td class="L">
+						<div class="addFile">
+							<div class="filelist">
+								<p>파일은 1개까지 첨부할 수 있으며, 전체 용량은 100Mbyte를 넘을 수 없습니다.</p>
+								<select name="select" multiple="multiple" id="select">
+									<option>업무요청파일(10Byte)</option>
+								</select>
+							</div>
+							<input type="file" name="fileField" title="파일첨부" class="filefield" id="fileField" />
+							<div class="fl mrt10">
+								<a href="#" class="btn_white"><span>파일추가 +</span></a> <a href="#" class="btn_white"><span>파일삭제 -</span></a>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="table_bottom">
+			<div class="fr">
+				<a href="#" class="btn_white"><span>수정</span></a>
+				<a href="#" class="btn_white"><span>삭제</span></a>
+				<a href="#" class="btn_gray"><span>목록</span></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

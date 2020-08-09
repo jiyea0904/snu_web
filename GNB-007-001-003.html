@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<!-- tsearchArea -->
+	<div class="tsearchArea">
+		<fieldset class="fl">
+			<div class="inputbox w150">
+				<p class="txt"></p>
+				<select>
+					<option>제목</option>
+					<option>장소</option>
+					<option>내용</option>
+				</select>
+			</div> 
+			<input type="text" id="search" class="w250" value="검색어를 입력하세요."><label for="search"></label><a class="btn_search" href="#"><img src="images/sub/btn_search.png" alt="search"></a> 
+		</fieldset>
+		<div class="fr">
+			<a href="#" class="btn_darkblue"><span>행사등록</span></a>
+			<a href="#" class="btn_darkblue"><span>미팅등록</span></a>
+		</div>
+	</div>
+	<!-- tsearchArea //-->
+	<div class="calendar_tab">
+		<a href="#" class="fl btn_purple today"><span>Today</span></a>
+		<p><a href="#"><img src="images/sub/btn_date_prev.png" alt="이전주"></a><span><em>2018</em>년<em>11</em>월<em>9</em>일 (<em>금</em>)</span><a href="#"><img src="images/sub/btn_date_next.png" alt="다음주"></a></p>
+		<ul class="tab_title">
+			<li data="tab0" class="tabtitle first"><a href="#"><span>월 (Month)</span></a></li>
+			<li data="tab1" class="tabtitle"><a href="#"><span>주 (Week)</span></a></li>
+			<li data="tab2" class="tabtitle last tab_on"><a href="#"><span>일 (Day)</span></a></li>
+		</ul>
+	</div>
+	<!-- calendar -->
+	<table class="calendar_table day" cellpadding="0" cellspacing="0">  
+		<caption>캘린더</caption>
+		<colgroup>
+			<col style="width:7%">
+			<col style="width:20%">
+			<col style="width:58%">
+			<col style="width:15%">
+		</colgroup>
+		<tbody>
+			<tr class="allday">
+				<td class="L"><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em></td>
+				<td class="C">종일</td>
+				<td class="L"><a href="#"><span class="title">학사캘린더에 대하여 알려드립니다.</span></a></td>
+				<td class="C">행정본부</td>
+			</tr>
+			<tr class="allday">
+				<td class="L"><span class="bullet" style="background-color:#005dd0;"></span><em class="start">시작</em></td>
+				<td class="C">종일</td>
+				<td class="L"><a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a></td>
+				<td class="C">정보화본부</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#07cef2;"></span><em class="start">시작</em></td>
+				<td class="C">오전 11:00~오후 03:00</td>
+				<td class="L"><a href="#"><span class="title">학사캘린더에 대하여 알려드립니다.</span></a></td>
+				<td class="C">행정본부</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#e4340b;"></span><em class="start">시작</em></td>
+				<td class="C">오전 11:00~오후 03:00</td>
+				<td class="L"><a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a></td>
+				<td class="C">정보화본부</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#e46c0b;"></span><em class="end">종료</em></td>
+				<td class="C">오전 11:00~오후 03:00</td>
+				<td class="L"><a href="#"><span class="title">학사캘린더에 대하여 알려드립니다.</span></a></td>
+				<td class="C">행정본부</td>
+			</tr>
+			<tr>
+				<td class="L"><span class="bullet" style="background-color:#f92d45;"></span><em class="end">종료</em></td>
+				<td class="C">오전 11:00~오후 03:00</td>
+				<td class="L"><a href="#"><span class="title">미팅캘린더를 공유합니다. 캘린더 확인하시어 미팅 참석 바랍니다.</span></a></td>
+				<td class="C">정보화본부</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="info">
+		<p><b>개인이 등록 가능한 캘린더</b> : 나의캘린더 (행사캘린더, 미팅캘린더) - 그외의 캘린더는 시스템에 자동 등록된 캘린더 입니다.</p>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+

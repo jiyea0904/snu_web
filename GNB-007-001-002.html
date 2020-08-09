@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<!-- tsearchArea -->
+	<div class="tsearchArea">
+		<fieldset class="fl">
+			<div class="inputbox w150">
+				<p class="txt"></p>
+				<select>
+					<option>제목</option>
+					<option>장소</option>
+					<option>내용</option>
+				</select>
+			</div> 
+			<input type="text" id="search" class="w250" value="검색어를 입력하세요."><label for="search"></label><a class="btn_search" href="#"><img src="images/sub/btn_search.png" alt="search"></a> 
+		</fieldset>
+		<div class="fr">
+			<a href="#" class="btn_darkblue"><span>행사등록</span></a>
+			<a href="#" class="btn_darkblue"><span>미팅등록</span></a>
+		</div>
+	</div>
+	<!-- tsearchArea //-->
+	<div class="calendar_tab">
+		<a href="#" class="fl btn_purple today"><span>Today</span></a>
+		<p><a href="#"><img src="images/sub/btn_date_prev.png" alt="이전주"></a><span><em>2018</em>년<em>11</em>월<em>4</em>일 ~ <em>2018</em>년<em>11</em>월<em>10</em>일</span><a href="#"><img src="images/sub/btn_date_next.png" alt="다음주"></a></p>
+		<ul class="tab_title">
+			<li data="tab0" class="tabtitle first"><a href="#"><span>월 (Month)</span></a></li>
+			<li data="tab1" class="tabtitle tab_on"><a href="#"><span>주 (Week)</span></a></li>
+			<li data="tab2" class="tabtitle last"><a href="#"><span>일 (Day)</span></a></li>
+		</ul>
+	</div>
+	<!-- calendar -->
+	<table class="calendar_table week" cellpadding="0" cellspacing="0">  
+		<caption>캘린더</caption>
+		<colgroup>
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+		</colgroup>
+		<thead>
+			<tr>
+				<th class="C sun">11월 4일(일)</th>
+				<th class="C">11월 5일(월)</th>
+				<th class="C">11월 6일(화)</th>
+				<th class="C">11월 7일(수)</th>
+				<th class="C">11월 8일(목)</th>
+				<th class="C">11월 9일(금)</th>
+				<th class="C sat">11월 10일(토)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="allday">
+				<td class="L sun">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a></li>
+					</ul>
+				</td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a></li>
+						<li><span class="bullet" style="background-color:#005dd0;"></span><em class="start">시작</em><a href="#">미팅캘린더</a></li>
+					</ul>
+				</td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a></li>
+					</ul>
+				</td>
+				<td class="L"></td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a></li>
+					</ul>
+				</td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a></li>
+						<li><span class="bullet" style="background-color:#005dd0;"></span><em class="end">종료</em><a href="#">미팅캘린더</a></li>
+					</ul>
+				</td>
+				<td class="L sat">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="L sun"></td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#005dd0;"></span><em class="start">시작</em><a href="#">미팅캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#07cef2;"></span><em class="end">종료</em><a href="#">근무캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#e4340b;"></span><em class="end">종료</em><a href="#">공지캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#e46c0b;"></span><em class="end">종료</em><a href="#">다른부서</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+					</ul>
+				</td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#005dd0;"></span><em class="start">시작</em><a href="#">미팅캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+					</ul>
+				</td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#005dd0;"></span><em class="start">시작</em><a href="#">미팅캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#07cef2;"></span><em class="end">종료</em><a href="#">근무캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#e4340b;"></span><em class="end">종료</em><a href="#">공지캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#e46c0b;"></span><em class="end">종료</em><a href="#">다른부서</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+					</ul>
+				</td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e;"></span><em class="start">시작</em><a href="#">학사캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#005dd0;"></span><em class="start">시작</em><a href="#">미팅캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#07cef2;"></span><em class="end">종료</em><a href="#">근무캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#e4340b;"></span><em class="end">종료</em><a href="#">공지캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#e46c0b;"></span><em class="end">종료</em><a href="#">다른부서</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+					</ul>
+				</td>
+				<td class="L">
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#07cef2;"></span><em class="end">종료</em><a href="#">근무캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#e4340b;"></span><em class="end">종료</em><a href="#">공지캘린더</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+						<li><span class="bullet" style="background-color:#e46c0b;"></span><em class="end">종료</em><a href="#">다른부서</a><span class="time">AM 11:00 ~ PM 03:00</span></li>
+					</ul>
+				</td>
+				<td class="L sat"></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="info">
+		<p><b>개인이 등록 가능한 캘린더</b> : 나의캘린더 (행사캘린더, 미팅캘린더) - 그외의 캘린더는 시스템에 자동 등록된 캘린더 입니다.</p>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+

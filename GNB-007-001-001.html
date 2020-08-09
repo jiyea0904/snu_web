@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<!-- tsearchArea -->
+	<div class="tsearchArea">
+		<fieldset class="fl">
+			<div class="inputbox w150">
+				<p class="txt"></p>
+				<select>
+					<option>제목</option>
+					<option>장소</option>
+					<option>내용</option>
+				</select>
+			</div> 
+			<input type="text" id="search" class="w250" value="검색어를 입력하세요."><label for="search"></label><a class="btn_search" href="#"><img src="images/sub/btn_search.png" alt="search"></a> 
+		</fieldset>
+		<div class="fr">
+			<a href="#" class="btn_darkblue"><span>행사등록</span></a>
+			<a href="#" class="btn_darkblue"><span>미팅등록</span></a>
+		</div>
+	</div>
+	<!-- tsearchArea //-->
+	<div class="calendar_tab">
+		<a href="#" class="fl btn_purple"><span class="today">Today</span></a>
+		<p><a href="#"><img src="images/sub/btn_date_prev.png" alt="이전달"></a><span><em>2018</em>년 <em>11</em>월</span><a href="#"><img src="images/sub/btn_date_next.png" alt="다음달"></a></p>
+		<ul class="tab_title">
+			<li data="tab0" class="tabtitle first tab_on"><a href="#"><span>월 (Month)</span></a></li>
+			<li data="tab1" class="tabtitle"><a href="#"><span>주 (Week)</span></a></li>
+			<li data="tab2" class="tabtitle last"><a href="#"><span>일 (Day)</span></a></li>
+		</ul>
+	</div>
+	<!-- calendar -->
+	<table class="calendar_table month">  
+		<caption>캘린더</caption>
+		<colgroup>
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+		</colgroup>
+		<thead>
+			<tr>
+				<th class="C sun">일</th>
+				<th class="C">월</th>
+				<th class="C">화</th>
+				<th class="C">수</th>
+				<th class="C">목</th>
+				<th class="C">금</th>
+				<th class="C sat">토</th>
+			</tr>
+		</thead>
+		<tbody>   
+			<tr>
+				<td class="L sun gray"><span class="date">28</span></td>
+				<td class="L gray"><span class="date">29</span></td>
+				<td class="L gray"><span class="date">30</span></td>
+				<td class="L gray"><span class="date">31</span></td>
+				<td class="L"><span class="date">1</span></td>
+				<td class="L"><span class="date">2</span>
+					<a href="#" class="num_schedule_list">15</a>
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e"></span><em class="start">시작</em><a href="#">학사캘린더</a></li>
+						<li><span class="bullet" style="background-color:#005dd0"></span><em class="start">시작</em><a href="#">미팅캘린더</a></li>
+						<li><span class="bullet" style="background-color:#07cef2"></span><em class="end">종료</em><a href="#">근무캘린더</a></li>
+						<li><span class="bullet" style="background-color:#e4340b"></span><em class="end">종료</em><a href="#">공지캘린더</a></li>
+						<li><span class="bullet" style="background-color:#e46c0b"></span><em class="end">종료</em><a href="#">다른부서</a></li>
+					</ul>
+				</td>
+				<td class="L sat"><span class="date">3</span>
+					<a href="#" class="num_schedule_list">13</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L sun"><span class="date">4</span></td>
+				<td class="L"><span class="date">5</span></td>
+				<td class="L"><span class="date">6</span></td>
+				<td class="L today"><div><span class="date">7</span>
+					<a href="#" class="num_schedule_list">15</a>
+					<ul class="schedule_list">
+						<li><span class="bullet" style="background-color:#0f3e8e"></span><em class="start">시작</em><a href="#">학사캘린더</a></li>
+						<li><span class="bullet" style="background-color:#005dd0"></span><em class="start">시작</em><a href="#">미팅캘린더</a></li>
+						<li><span class="bullet" style="background-color:#07cef2"></span><em class="end">종료</em><a href="#">근무캘린더</a></li>
+						<li><span class="bullet" style="background-color:#e4340b"></span><em class="end">종료</em><a href="#">공지캘린더</a></li>
+						<li><span class="bullet" style="background-color:#e46c0b"></span><em class="end">종료</em><a href="#">다른부서</a></li>
+					</ul></div>
+				</td>
+				<td class="L"><span class="date">8</span></td>
+				<td class="L"><span class="date">9</span>
+					<a href="#" class="num_schedule_list">00</a>
+				</td>
+				<td class="L sat"><span class="date">10</span>
+					<a href="#" class="num_schedule_list">09</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="L sun"><span class="date">11</span></td>
+				<td class="L"><span class="date">12</span></td>
+				<td class="L"><span class="date">13</span></td>
+				<td class="L"><span class="date">14</span></td>
+				<td class="L"><span class="date">15</span></td>
+				<td class="L"><span class="date">16</span></td>
+				<td class="L sat"><span class="date">17</span></td>
+			</tr>
+			<tr>
+				<td class="L sun"><span class="date">18</span></td>
+				<td class="L"><span class="date">19</span></td>
+				<td class="L"><span class="date">20</span></td>
+				<td class="L"><span class="date">21</span></td>
+				<td class="L"><span class="date">22</span></td>
+				<td class="L"><span class="date">23</span></td>
+				<td class="L sat"><span class="date">24</span></td>
+			</tr>
+			<tr>
+				<td class="L sun"><span class="date">25</span></td>
+				<td class="L"><span class="date">26</span></td>
+				<td class="L"><span class="date">27</span></td>
+				<td class="L"><span class="date">28</span></td>
+				<td class="L gray"><span class="date">1</span></td>
+				<td class="L gray"><span class="date">2</span></td>
+				<td class="L gray"><span class="date">3</span></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="info">
+		<p><b>개인이 등록 가능한 캘린더</b> : 나의캘린더 (행사캘린더, 미팅캘린더) - 그외의 캘린더는 시스템에 자동 등록된 캘린더 입니다.</p>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+

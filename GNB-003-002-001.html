@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="popup">
+	<h2>바로가기 서비스 설정</h2>
+	<div class="popup_wrap">
+		<div class="tablinkArea">
+			<ul>
+				<li class="first w50per"><a href="GNB-003-002-001.html" class="on"><span>메뉴등록</span></a></li>
+				<li class="last w50per"><a href="GNB-003-002-002.html"><span>메뉴배치</span></a></li>
+			</ul>
+		</div>
+		<div class="contentswrap board">
+			<div class="w100per">
+				<div class="fl w25per treeArea">
+					<div class="scroll">
+						<div class="tree"></div>
+					</div>
+				</div>
+				<div class="fr w75per">
+					<div class="category_line">
+						<h6 class="subtitle">카테고리</h6>
+						<div class="fr">
+							<div class="fl inputbox w100 mrr5">
+								<p class="txt"></p>
+								<select>
+									<option>1 Depth 1</option>
+								</select>
+							</div>
+							<div class="fl inputbox w100  mrr5">
+								<p class="txt"></p>
+								<select>
+									<option>2 Depth 1</option>
+								</select>
+							</div>
+							<div class="fl inputbox w100">
+								<p class="txt"></p>
+								<select>
+									<option>선택하세요</option>
+								</select>
+							</div>
+							<a href="#" class="btn_darkblue"><span>카테고리 등록</span></a>
+							<a href="#" class="btn_gray"><span>메뉴 등록</span></a>
+						</div>
+					</div>
+					<div class="category">
+						<h6 class="subtitle">카테고리 등록</h6>
+						<table cellpadding="0" cellspacing="0">
+							<colgroup>
+								<col width="15%" />
+								<col width="85%" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th class="C">국문 카테고리명</th>
+									<td class="L"><span class="fl mrr5">1 Depth 1 > 2 Depth 1 ></span> <input type="text" id="category_ko" name="category_ko" class="w300" value="국문 카테고리명을 입력하세요." /><label for="category_ko"></label></td>
+								</tr>
+								<tr>
+									<th class="C">영문 카테고리명</th>
+									<td class="L"><span class="fl mrr5">1 Depth 1 > 2 Depth 1 ></span> <input type="text" id="category_en" name="category_en" class="w300" value="영문 카테고리명을 입력하세요." /><label for="category_en"></label></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="category">
+						<h6 class="subtitle">메뉴등록</h6>
+						<table cellpadding="0" cellspacing="0">
+							<colgroup>
+								<col width="15%" />
+								<col width="60%" />
+								<col width="25%" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th class="C">사용유무</th>
+									<td class="L">
+										<input type="radio" id="yes" name="use" /><label for="yes">Y</label> 
+										<input type="radio" id="no" name="use" /><label for="no">N</label> 
+									</td>
+									<td class="C" rowspan="2">
+										<p class="icon_choice">아이콘선택<a href="#" class="fr btn_darkblue"><span>아이콘선택</span></a></p>
+										<span class="imgarea iconimg"></span>
+									</td>
+								</tr>
+								<tr>
+									<th class="C">사용 신분</th>
+									<td class="L">
+										<input type="checkbox" id="sta" name="sta" /><label for="sta">직원</label> 
+										<input type="checkbox" id="pro" name="pro" /><label for="pro">교원</label> 
+										<input type="checkbox" id="stu" name="stu" /><label for="stu">학생</label> 
+									</td>
+								</tr>
+								<tr>
+									<th class="C">국문 메뉴명</th>
+									<td class="L" colspan="2"><span class="fl mrr5">1 Depth 1 > 2 Depth 1 ></span> <input type="text" id="menu_ko" name="menu_ko" class="w200" value="국문 메뉴명을 입력하세요." /><label for="menu_ko"></label></td>
+								</tr>
+								<tr>
+									<th class="C">국문 포털URL</th>
+									<td class="L" colspan="2">
+										 <input type="text" id="ko_portal_url" name="ko_portal_url" class="w300" value="http://www.XXXXXX.xxxx/xxxxx" /><label for="ko_portal_url"></label>
+										<input type="text" id="w_ko_portal_url" name="w_ko_portal_url" class="w150" value="Target 직접입력" /><label for="w_ko_portal_url"></label>
+										<div class="inputbox w150">
+											<p class="txt"></p>
+											<select>
+												<option>Target 선택</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="C">국문 모바일URL</th>
+									<td class="L" colspan="2">
+										 <input type="text" id="ko_mobile_url" name="ko_mobile_url" class="w300" value="http://www.XXXXXX.xxxx/xxxxx" /><label for="ko_mobile_url"></label>
+										<input type="text" id="w_ko_mobile_url" name="w_ko_mobile_url" class="w150" value="Target 직접입력" /><label for="w_ko_mobile_url"></label>
+										<div class="inputbox w150">
+											<p class="txt"></p>
+											<select>
+												<option>Target 선택</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="C">영문 카테고리명</th>
+									<td class="L" colspan="2"><span class="fl mrr5">1 Depth 1 > 2 Depth 1 ></span> <input type="text" id="menu_en" name="menu_en" class="w200" value="영문 메뉴명을 입력하세요." /><label for="menu_en"></label></td>
+								</tr>
+								<tr>
+									<th class="C">영문 포털URL</th>
+									<td class="L" colspan="2">
+										 <input type="text" id="en_portal_url" name="en_portal_url" class="w300" value="http://www.XXXXXX.xxxx/xxxxx" /><label for="en_portal_url"></label>
+										<input type="text" id="w_en_portal_url" name="w_en_portal_url" class="w150" value="Target 직접입력" /><label for="w_en_portal_url"></label>
+										<div class="inputbox w150">
+											<p class="txt"></p>
+											<select>
+												<option>Target 선택</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="C">영문 모바일URL</th>
+									<td class="L" colspan="2">
+										 <input type="text" id="en_mobile_url" name="en_mobile_url" class="w300" value="http://www.XXXXXX.xxxx/xxxxx" /><label for="en_mobile_url"></label>
+										<input type="text" id="w_en_mobile_url" name="w_en_mobile_url" class="w150" value="Target 직접입력" /><label for="w_en_mobile_url"></label>
+										<div class="inputbox w150">
+											<p class="txt"></p>
+											<select>
+												<option>Target 선택</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="btnArea mrt15">
+				<div class="C">
+					<a href="#" class="btn_darkblue"><span>저장</span></a>
+					<a href="#" class="btn_white"><span>삭제</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn_close"><img src="images/sub/popup_btn_close.png" alt="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+
+
+

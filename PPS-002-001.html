@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="popup">
+	<h2>학부모 휴대폰 인증</h2>
+	<div class="popup_wrap">
+		<div class="contentswrap board">
+			<div class="info">
+				<h6>학부모 인증 진행순서</h6>
+				<ol>
+					<li>1. 자녀의 이름과 본인(학부모)의 이름 및 휴대폰번호를 차례대로 입력하고, <em>"인증번호 받기”</em>를 클릭하세요.</li>
+					<li>2. 휴대폰으로 받은 <em>“인증번호”를 입력</em>하고, “학부모서비스 바로가기”를 클릭하시면 해당 서비스를 이용하실 수 있습니다. </li>
+					<li>3. 현재 <em>서울대학교에 재학 중인 학생</em>에 한하여 조회가 가능합니다.</li>
+				</ol>
+			</div>
+			<table cellpadding="0" cellspacing="0" class="mrt15">
+				<colgroup>
+					<col width="30%" />
+					<col width="70%" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th class="C">자녀이름</th>
+						<td class="L"><input type="text" id="stu_name" name="stu_name" class="w100per" /><label for="stu_name"></label></td>
+					</tr>
+					<tr>
+						<th class="C">학부모이름</th>
+						<td class="L"><input type="text" id="parent_name" name="parent_name" class="w100per" /><label for="parent_name"></label></td>
+					</tr>
+					<tr>
+						<th class="C">학부모 휴대폰번호</th>
+						<td class="L"><input type="text" id="parent_hp" name="parent_hp" class="w100per" /><label for="parent_hp"></label></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="btnArea mrt10">
+				<div class="C">
+					<a href="#" class="btn_gray"><span>승인</span></a>
+				</div>
+			</div>
+			<table cellpadding="0" cellspacing="0" class="mrt15">
+				<colgroup>
+					<col width="30%" />
+					<col width="70%" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th class="C">인증번호</th>
+						<td class="L"><input type="text" id="certi_num" name="certi_num" class="w100per" /><label for="certi_num"></label></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="btnArea mrt10">
+				<div class="C">
+					<a href="#" class="btn_darkblue"><span>학부모서비스 바로가기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn_close"><img src="images/sub/popup_btn_close.png" alt="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+
+
+

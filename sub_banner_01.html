@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<!-- tsearchArea -->
+		<div class="tsearchArea">
+			<div class="fl">
+				<span class="title">제목</span>
+				<input type="text" id="title" name="title" class="fl w200 mrr5 " /><label for="title"></label>
+			</div>
+			<div class="fl mrl10">
+				<span class="title">상태</span>
+				<div class="fl inputbox w80">
+					<p class="txt"></p>
+					<select>
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="fl mrl10">
+				<span class="title">일시</span>
+				<input type="text" id="date_start" name="date_start" class="fl date w150" /><label for="date_start"></label>
+				<span class="fl">~</span>
+				<input type="text" id="date_end" name="date_end" class="fl date w150 mrr5" /><label for="date_end"></label>
+				<a href="#" class="btn_darkblue"><span>검색</span></a>
+			</div> 
+		</div>
+		<div class="table_top mrt15">
+			<div class="fl">
+				<p class="mrr5">총 <em>1</em>건 (<em>1/1</em>)</p>
+			</div>
+			<div class="fr">
+				<a href="#" class="btn_white"><span>추가</span></a>
+				<a href="#" class="btn_white"><span>삭제</span></a>
+			</div>
+		</div>
+		<!-- list -->
+		<table cellpadding="0" cellspacing="0" class="">
+			<colgroup>
+				<col width="6%" />
+				<col width="8%" />
+				<col width="12%" />
+				<col width="*%" />
+				<col width="12%" />
+				<col width="25%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><span class="import"></span></th>
+					<th class="C"><span class="import">NO</span></th>
+					<th class="C"><span class="import">상태</span></th>
+					<th class="C"><span class="import">제목</span></th>
+					<th class="C"><span class="import">등록자</span></th>
+					<th class="C"><span class="import">등록일</span></th>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_01" name="title_en" class="checkbox" /><label for="checkbox_01"></label></td>
+					<td class="C">1</td>
+					<td class="C">승인</td>
+					<td class="C">이얍</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_02" name="title_en" class="checkbox" /><label for="checkbox_02"></label></td>
+					<td class="C">1</td>
+					<td class="C">승인</td>
+					<td class="C">ㅂㅂ</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_03" name="title_en" class="checkbox" /><label for="checkbox_03"></label></td>
+					<td class="C">3</td>
+					<td class="C">승인</td>
+					<td class="C">2</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_04" name="title_en" class="checkbox" /><label for="checkbox_04"></label></td>
+					<td class="C">4</td>
+					<td class="C">승인</td>
+					<td class="C">1</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_05" name="title_en" class="checkbox" /><label for="checkbox_05"></label></td>
+					<td class="C">5</td>
+					<td class="C">승인</td>
+					<td class="C">마지막 로그인</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_06" name="title_en" class="checkbox" /><label for="checkbox_06"></label></td>
+					<td class="C">6</td>
+					<td class="C">승인</td>
+					<td class="C">dst</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_07" name="title_en" class="checkbox" /><label for="checkbox_07"></label></td>
+					<td class="C">7</td>
+					<td class="C">승인</td>
+					<td class="C">d</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_08" name="title_en" class="checkbox" /><label for="checkbox_08"></label></td>
+					<td class="C">8</td>
+					<td class="C">승인</td>
+					<td class="C">d</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_09" name="title_en" class="checkbox" /><label for="checkbox_09"></label></td>
+					<td class="C">9</td>
+					<td class="C">승인</td>
+					<td class="C">1</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="checkbox_10" name="title_en" class="checkbox" /><label for="checkbox_10"></label></td>
+					<td class="C">10</td>
+					<td class="C">승인</td>
+					<td class="C">10개 만들자</td>
+					<td class="C">admin</td>
+					<td class="C">2018/11/07 ~ 2018/11/13</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="tcontrol mrt15">
+			<a href="#" class="btn_more w100per"><span>더보기 +</span></a>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+

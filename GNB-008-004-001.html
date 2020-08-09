@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="popup">
+	<h2>포틀릿 스토어</h2>
+	<div class="popup_wrap">
+		<div class="tablinkArea">
+			<ul>
+				<li class="first w25per"><a href="GNB-008-001-001.html"><span>포틀릿 편집</span></a></li>
+				<li class="w25per"><a href="GNB-008-002-001.html"><span>포틀릿 추천 순위</span></a></li>
+				<li class="w25per"><a href="GNB-008-003-001.html"><span>포틀릿 테마 추천</span></a></li>
+				<li class="last w25per"><a href="GNB-008-004-001.html" class="on"><span>포틀릿 제작</span></a></li>
+			</ul>
+		</div>
+		<div class="contentswrap board portletstore">
+			<div class="tsearchArea">
+				<fieldset>
+					<input type="text" id="search" class="w100per" value="검색어를 입력하세요."><label for="search"></label><a class="btn_search" href="#"><img src="images/sub/btn_search.png" alt="search"></a> 
+				</fieldset>
+			</div>
+			<div class="sub_tab mrt15">
+				<ul class="tab_title">
+					<li data="sub_tab_01" class="tabtitle first tab_on"><a href="#">신분명</a></li>
+				</ul>
+				<div class="tab_content">
+					<div class="sub_tab_01 scroll">
+						<ul class="makeportlet">
+							<li>
+								<label for="portlet_01"><img src="images/portlet/portlet_sample.gif" alt="포틀릿1 (2*2)" /></label>
+								<input type="text" id="portlet_01_title" name="portlet_01_title" class="w100per" value="포틀릿 제목을 입력하세요." /><label for="portlet_01_title"></label>
+								<div class="btn">
+									<span class="w50per left"><a href="#" class="btn_purple"><span>메뉴추가</span></a></span>
+									<span class="w50per right"><a href="#" class="btn_gray"><span>미리보기</span></a></span>
+								</div>
+								<input type="checkbox" id="portlet_01" name="portlet_01" />
+							</li>
+							<li>
+								<label for="portlet_02"><img src="images/portlet/portlet_sample.gif" alt="포틀릿1 (2*2)" /></label>
+								<input type="text" id="portlet_02_title" name="portlet_02_title" class="w100per" value="포틀릿 제목을 입력하세요." /><label for="portlet_02_title"></label>
+								<div class="btn">
+									<span class="w50per left"><a href="#" class="btn_purple"><span>메뉴추가</span></a></span>
+									<span class="w50per right"><a href="#" class="btn_gray"><span>미리보기</span></a></span>
+								</div>
+								<input type="checkbox" id="portlet_02" name="portlet_02" />
+							</li>
+							<li>
+								<label for="portlet_03"><img src="images/portlet/portlet_sample.gif" alt="포틀릿1 (2*2)" /></label>
+								<input type="text" id="portlet_03_title" name="portlet_03_title" class="w100per" value="포틀릿 제목을 입력하세요." /><label for="portlet_03_title"></label>
+								<div class="btn">
+									<span class="w50per left"><a href="#" class="btn_purple"><span>메뉴추가</span></a></span>
+									<span class="w50per right"><a href="#" class="btn_gray"><span>미리보기</span></a></span>
+								</div>
+								<input type="checkbox" id="portlet_03" name="portlet_03" />
+							</li>
+						</ul>
+					</div>
+					<div class="sub_tab_02 scroll none">
+					</div>
+				</div>
+			</div>
+			<div class="btnArea mrt15">
+				<div class="C">
+					<a href="#" class="btn_darkblue"><span>적용</span></a>
+					<a href="#" class="btn_white refresh"><span>초기화</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn_close"><img src="images/sub/popup_btn_close.png" alt="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+
+
+

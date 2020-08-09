@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<div class="table_top">
+			<div class="fr">
+				<a href="#" class="btn_white"><span>삭제</span></a>
+				<a href="#" class="btn_darkblue"><span>등록</span></a>
+				<a href="#" class="btn_gray"><span>목록</span></a>
+			</div>
+		</div>
+		<table cellpadding="0" cellspacing="0">
+			<colgroup>
+				<col width="15%" />
+				<col width="35%" />
+				<col width="15%" />
+				<col width="35%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><span class="import">카테고리</span></th>
+					<td class="L" colspan="3">
+						<div class="inputbox w400">
+							<p class="txt"></p>
+							<select>
+								<option>학사</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">일시</span></th>
+					<td class="L" colspan="3">
+						<div class="date">
+							<input type="text" id="date_start" name="date_start" class="w150 date" value="2018.06.18(수)" /><label for="date_start"></label>
+							<span><input type="checkbox" id="allday" name="allday" /><label for="allday">종일</label></span>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>16시</option>
+								</select>
+							</div>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+						</div>
+						<span class="fl mrr5">~</span>
+						<div class="date">
+							<input type="text" id="date_end" name="date_end" class="w150 date" value="2018.06.18(수)" /><label for="date_end"></label>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>16시</option>
+								</select>
+							</div>
+							<div class="inputbox w80">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">공간</th>
+					<td class="L">
+						<input type="text" id="area" name="area" value="공간을 입력하세요." class="fl w200 mrr5" /><label for="area"></label><a href="#" class="btn_darkblue search fl"><span>공간검색</span></a>
+					</td>
+					<th class="C">조회수</th>
+					<td class="L">341</td>
+				</tr>
+			</tbody>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="mrt10">
+			<colgroup>
+				<col width="15%" />
+				<col width="35%" />
+				<col width="15%" />
+				<col width="35%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C">비콘알림</th>
+					<td><input type="checkbox" id="vicon_alarm" name="vicon_alarm" /><label for="vicon_alarm"></label></td>
+					<th class="C">알림 기간</th>
+					<td>
+						<input type="text" id="alarm_start" name="alarm_start" class="w150 date" /><label for="alarm_start"></label> ~ <input type="text" id="alarm_end" name="alarm_end" class="w150 date" /><label for="alarm_end"></label>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">알림주기</th>
+					<td class="L">
+						<div class="inputbox w100per">
+							<p class="txt"></p>
+							<select>
+								<option>최소 1번</option>
+							</select>
+						</div>
+					</td>
+					<th class="C">알림 시간</th>
+					<td class="L">
+						<div class="date">
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>16시</option>
+								</select>
+							</div>
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+						</div>
+						<span class="fl mrr5">~</span>
+						<div class="date">
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>16시</option>
+								</select>
+							</div>
+							<div class="inputbox w60">
+								<p class="txt"></p>
+								<select>
+									<option>00분</option>
+								</select>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="L pd0" colspan="4">
+						<div class="info">
+							<h6>주의사항</h6>
+							<ul>
+								<li>비콘 알림 체크 시 캠퍼스맵 앱이 설치된 사용자가 행사 건물에 가까이 갈 경우 <em>스마트폰으로 행사/이벤트 정보가 자동으로 전달</em>됩니다.</li>
+								<li>비콘 주기를 <em>“매번” 선택 시</em> 잦은 알림으로 민원을 야기할 수 있으니 신중히 선택하시기 바랍니다.</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="mrt10">
+			<colgroup>
+				<col width="15%" />
+				<col width="85%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><span class="import">제목(국문)</span></th>
+					<td class="L"><input type="text" id="title_ko" name="title_ko" class="w100per" /><label for="title_ko"></label></td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">제목(영문)</span></th>
+					<td class="L"><input type="text" id="title_en" name="title_en" class="w100per" /><label for="title_en"></label></td>
+				</tr>
+				<tr>
+					<th class="C">링크</th>
+					<td class="L"><input type="text" id="url_link" name="url_link" class="w100per" /><label for="url_link"></label></td>
+				</tr>
+				<tr>
+					<th class="C"><span class="import">대상그룹</span></th>
+					<td class="L"><input type="text" id="group" name="group" class="w200 fl mrr5" /><label for="group"></label><a href="#" class="btn_darkblue search fl"><span>검색</span></a></td>
+				</tr>
+				<tr>
+					<th class="C">참가비(국문)</th>
+					<td class="L"><input type="text" id="money_ko" name="money_ko" class="w100per" /><label for="money_ko"></label></td>
+				</tr>
+				<tr>
+					<th class="C">참가비(영문)</th>
+					<td class="L"><input type="text" id="money_en" name="money_en" class="w100per" /><label for="money_en"></label></td>
+				</tr>
+				<tr>
+					<th class="C">담당자</th>
+					<td class="L">
+						<input type="text" id="name" name="name" class="w100" value="이름" /><label for="name"></label>
+						<input type="text" id="phone" name="phone" class="w120" value="전화번호" /><label for="phone"></label>
+						<input type="text" id="email" name="email" class="w200" value="이메일" /><label for="email"></label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="mrt10">
+			<colgroup>
+				<col width="15%" />
+				<col width="35%" />
+				<col width="15%" />
+				<col width="35%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="C"><span class="import">내용(국문)</span></th>
+					<td class="L" colspan="3"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<th class="C">내용(영문)</th>
+					<td class="L" colspan="3"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<th class="C">이미지(국문)</th>
+					<td class="L">
+						<span class="imgarea"></span>
+						<input  type="file" id="img_ko_file" name="img_ko_file"><label for="img_ko_file"></label>
+					</td>
+					<th class="C">이미지(영문)</th>
+					<td class="L">
+						<span class="imgarea"></span>
+						<input  type="file" id="img_en_file" name="img_en_file"><label for="img_en_file"></label>
+					</td>
+				</tr>
+				<tr>
+					<th class="C">관련문서</th>
+					<td class="L" colspan="3">
+						<div class="addFile">
+							<div class="filelist">
+								<p>파일은 10개까지 첨부할 수 있으며, 전체 용량은 100Mbyte를 넘을 수 없습니다.</p>
+								<select name="select" multiple="multiple" id="select">
+									<option>업무요청파일(10Byte)</option>
+								</select>
+							</div>
+							<input type="file" name="fileField" title="파일첨부" class="filefield" id="fileField" />
+							<div class="fl mrt10">
+								<a href="#" class="btn_white"><span>파일추가 +</span></a> <a href="#" class="btn_white"><span>파일삭제 -</span></a>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="table_bottom">
+			<div class="fr">
+				<a href="#" class="btn_white"><span>삭제</span></a>
+				<a href="#" class="btn_darkblue"><span>등록</span></a>
+				<a href="#" class="btn_gray"><span>목록</span></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

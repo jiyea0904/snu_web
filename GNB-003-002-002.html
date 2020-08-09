@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="popup">
+	<h2>바로가기 서비스 설정</h2>
+	<div class="popup_wrap">
+		<div class="tablinkArea">
+			<ul>
+				<li class="first w50per"><a href="GNB-003-002-001.html"><span>메뉴등록</span></a></li>
+				<li class="last w50per"><a href="GNB-003-002-002.html" class="on"><span>메뉴배치</span></a></li>
+			</ul>
+		</div>
+		<div class="contentswrap board">
+			<div class="w100per">
+				<div class="table_top">
+						<h6 class="subtitle">메인화면목록</h6>
+						<div class="fr">
+							<div class="inputbox w300">
+								<p class="txt"></p>
+								<select>
+									<option>신분선택</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				<div class="fl w75per">
+					<div class="quickserviceList">
+						<ul>
+							<li class="lock">
+								<span class="icon"><img src="images/main/qucikicon_01.png" alt="주간식단표" /><a href="#" class="btn_orange"><span>해제</span></a></span>
+								<span class="txt">주간식단표</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li class="lock">
+								<span class="icon"><img src="images/main/qucikicon_02.png" alt="학칙 및 규정" /><a href="#" class="btn_orange"><span>해제</span></a></span>
+								<span class="txt">학칙 및 규정</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_03.png" alt="행정정보" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">행정정보</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_04.png" alt="연구행정" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">연구행정</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_05.png" alt="기금행정" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">기금행정</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_06.png" alt="SNU Talk" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">SNU Talk</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_07.png" alt="SMS 발송" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">SMS 발송</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_08.png" alt="SW 다운로드" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">SW 다운로드</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_09.png" alt="IT 서비스" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">IT 서비스</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_10.png" alt="도서관서비스" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">도서관서비스</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_11.png" alt="시설이용신청" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">시설이용신청</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_12.png" alt="월별급여내역조회" /><a href="#" class="btn_darkblue"><span>잠금</span></a></span>
+								<span class="txt">월별급여내역조회</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li>
+								<span class="icon"><img src="images/main/qucikicon_13.png" alt="애경사" /><a href="#" class="btn_darkblue"><span>잠금</span></a><span class="alarm">바로가기를 관리자가 삭제하였습니다.</span></span>
+								<span class="txt">애경사</span>
+								<a href="#" class="btn_delete"><img src="images/sub/btn_delete.gif" alt="삭제" /></a>
+							</li>
+							<li><a href="#"><span class="icon"><img src="images/main/qucikicon_setting.png" alt="환경설정" /></span><span class="txt">환경설정</span></a></li>
+						</ul>
+					</div>
+					<div class="sub_tab mrt15">
+						<ul class="tab_title">
+							<li data="sub_tab_01" class="tabtitle first tab_on"><a href="#">카테고리1</a></li>
+							<li data="sub_tab_02" class="tabtitle"><a href="#">카테고리2</a></li>
+							<li data="sub_tab_03" class="tabtitle"><a href="#">카테고리3</a></li>
+							<li data="sub_tab_04" class="tabtitle"><a href="#">카테고리4</a></li>
+							<li data="sub_tab_05" class="tabtitle"><a href="#">카테고리5</a></li>
+						</ul>
+						<div class="tab_content">
+							<div class="sub_tab_01 scroll">
+								<div class="quickserviceList">
+									<ul>
+										<li class="lock">
+											<span class="icon"><img src="images/main/qucikicon_01.png" alt="주간식단표" /></span>
+											<span class="txt">주간식단표</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li class="lock">
+											<span class="icon"><img src="images/main/qucikicon_02.png" alt="학칙 및 규정" /></span>
+											<span class="txt">학칙 및 규정</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_03.png" alt="행정정보" /></span>
+											<span class="txt">행정정보</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_04.png" alt="연구행정" /></span>
+											<span class="txt">연구행정</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_05.png" alt="기금행정" /></span>
+											<span class="txt">기금행정</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_06.png" alt="SNU Talk" /></span>
+											<span class="txt">SNU Talk</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_07.png" alt="SMS 발송" /></span>
+											<span class="txt">SMS 발송</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_08.png" alt="SW 다운로드" /></span>
+											<span class="txt">SW 다운로드</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_09.png" alt="IT 서비스" /></span>
+											<span class="txt">IT 서비스</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_10.png" alt="도서관서비스" /></span>
+											<span class="txt">도서관서비스</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_11.png" alt="시설이용신청" /></span>
+											<span class="txt">시설이용신청</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_12.png" alt="월별급여내역조회" /></span>
+											<span class="txt">월별급여내역조회</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_13.png" alt="애경사" /></span>
+											<span class="txt">애경사</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sub_tab_02 scroll none">
+								<div class="quickserviceList">
+									<ul>
+										<li class="lock">
+											<span class="icon"><img src="images/main/qucikicon_01.png" alt="주간식단표" /></span>
+											<span class="txt">주간식단표22</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li class="lock">
+											<span class="icon"><img src="images/main/qucikicon_02.png" alt="학칙 및 규정" /></span>
+											<span class="txt">학칙 및 규정</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_03.png" alt="행정정보" /></span>
+											<span class="txt">행정정보</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_04.png" alt="연구행정" /></span>
+											<span class="txt">연구행정</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_05.png" alt="기금행정" /></span>
+											<span class="txt">기금행정</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_06.png" alt="SNU Talk" /></span>
+											<span class="txt">SNU Talk</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_07.png" alt="SMS 발송" /></span>
+											<span class="txt">SMS 발송</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_08.png" alt="SW 다운로드" /></span>
+											<span class="txt">SW 다운로드</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_09.png" alt="IT 서비스" /></span>
+											<span class="txt">IT 서비스</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_10.png" alt="도서관서비스" /></span>
+											<span class="txt">도서관서비스</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_11.png" alt="시설이용신청" /></span>
+											<span class="txt">시설이용신청</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_12.png" alt="월별급여내역조회" /></span>
+											<span class="txt">월별급여내역조회</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+										<li>
+											<span class="icon"><img src="images/main/qucikicon_13.png" alt="애경사" /></span>
+											<span class="txt">애경사</span>
+											<a href="#" class="btn_delete"><img src="images/sub/btn_up.gif" alt="목록등록" /></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fr w25per infoArea">
+					<div class="info">
+						<h6>안내사항</h6>
+						<ul class="mrt10">
+							<li>아이콘을 마우스로 이동하여 재배치 할 수 있습니다.</li>
+							<li><img src="images/sub/btn_delete.gif" alt="삭제" />클릭하면, 해당 아이콘을 삭제합니다.</li>
+							<li><img src="images/sub/btn_up.gif" alt="목록등록" />클릭하면, 해당 아이콘을 메인화면 목록에 등록합니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="btnArea mrt15">
+				<div class="C">
+					<a href="#" class="btn_darkblue"><span>저장</span></a>
+					<a href="#" class="btn_white"><span>삭제</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn_close"><img src="images/sub/popup_btn_close.png" alt="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+
+
+

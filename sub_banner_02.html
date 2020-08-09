@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<div class="w100per">
+			<div class="fl w55per pdr10">
+				<h6 class="subtitle">배너추가</h6>
+				<table cellpadding="0" cellspacing="0" class="mrt10">
+				  <colgroup>
+					  <col width="7%" />
+					  <col width="43%" />
+					  <col width="7%" />
+					  <col width="43%" />
+				  </colgroup>
+				  <tbody>
+					  <tr>
+						  <th class="C"><input type="radio" name="banner_plus" id="plus" value=""><label for="plus"></label></th>
+						  <td class="L">
+							  <p>Custom Image(KOR)</p>
+							  <span class="imgarea"><!-- <img src="images/main/banner_bg.gif" alt="임시이미지" /> --></span>
+							  <input  type="file" id="img_ko_file" name="img_ko_file"><label for="img_ko_file"></label>
+							</td>
+							<th class="C"></th>
+							<td class="L">
+								<p>Custom Image(ENG)</p>
+							  <span class="imgarea"><!-- <img src="images/main/banner_bg.gif" alt="임시이미지" /> --></span>
+							  <input  type="file" id="img_en_file" name="img_en_file"><label for="img_en_file"></label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="info mrt10">
+					<p>직접등록 이미지는 <em>245*96</em>(픽셀)에서 최적화 되어 있습니다.</p>
+				</div>
+				<h6 class="subtitle mrt15">배너이미지 선택</h6>
+				<table cellpadding="0" cellspacing="0" class="mrt10">
+					<colgroup>
+					  <col width="7%" />
+					  <col width="43%" />
+					  <col width="7%" />
+					  <col width="43%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th class="C"><input type="radio" name="selection" id="select_01" value=""></th>
+							<td class="L"><label for="select_01"><span class="imgarea"><img src="images/main/banner_01.gif" alt="banner_01" /></span></label></td>
+							<th class="C"><input type="radio" name="selection" id="select_02" value=""><label for="select_02"></label></th>
+							<td class="L"><label for="select_02"><span class="imgarea"><img src="images/main/banner_02.gif" alt="banner_02" /></span></label></td>
+						</tr>
+						<tr>
+							<th class="C"><input type="radio" name="selection" id="select_03" value=""></th>
+							<td class="L"><label for="select_03"><span class="imgarea"><img src="images/main/banner_03.gif" alt="banner_03" /></span></label></td>
+							<th class="C"><input type="radio" name="selection" id="select_04" value=""><label for="select_02"></label></th>
+							<td class="L"><label for="select_04"><span class="imgarea"><img src="images/main/banner_04.gif" alt="banner_04" /></span></label></td>
+						</tr>
+						<tr>
+							<th class="C"><input type="radio" name="selection" id="select_05" value=""></th>
+							<td class="L"><label for="select_05"><span class="imgarea"><img src="images/main/banner_05.gif" alt="banner_05" /></span></label></td>
+							<th class="C"><input type="radio" name="selection" id="select_06" value=""><label for="select_02"></label></th>
+							<td class="L"><label for="select_06"><span class="imgarea"><img src="images/main/banner_06.gif" alt="banner_06" /></span></label></td>
+						</tr>
+						<tr>
+							<th class="C"><input type="radio" name="selection" id="select_07" value=""><label for="select_07"></label></th>
+							<td class="L"><label for="select_07"><span class="imgarea"><img src="images/main/banner_07.gif" alt="banner_07" /></span></label></td>
+							<th class="C"><input type="radio" name="selection" id="select_08" value=""><label for="select_08"></label></th>
+							<td class="L"><label for="select_08"><span class="imgarea"><img src="images/main/banner_08.gif" alt="banner_08" /></span></label></td>
+						</tr>
+						<tr>
+							<th class="C"><input type="radio" name="selection" id="select_09" value=""></th>
+							<td class="L"><label for="select_09"><span class="imgarea"><img src="images/main/banner_09.gif" alt="banner_09" /></span></label></td>
+							<th class="C"><input type="radio" name="selection" id="select_10" value=""><label for="select_10"></label></th>
+							<td class="L"><label for="select_10"><span class="imgarea"><img src="images/main/banner_10.gif" alt="banner_10" /></span></label></td>
+						</tr>
+						<tr>
+							<th class="C"><input type="radio" name="selection" id="select_11" value=""></th>
+							<td class="L"><label for="select_11"><span class="imgarea"><img src="images/main/banner_11.gif" alt="banner_11" /></span></label></td>
+							<th class="C"><input type="radio" name="selection" id="select_12" value=""><label for="select_02"></label></th>
+							<td class="L"><label for="select_12"><span class="imgarea"><img src="images/main/banner_12.gif" alt="banner_12" /></span></label></td>
+						</tr>
+						<tr>
+							<th class="C"><input type="radio" name="selection" id="select_13" value=""></th>
+							<td class="L"><label for="select_13"><span class="imgarea"><img src="images/main/banner_13.gif" alt="banner_13" /></span></label></td>
+							<th class="C"><input type="radio" name="selestion" id="select_14" value=""><label for="select_02"></label></th>
+							<td class="L"><label for="select_14"><span class="imgarea"><img src="images/main/banner_14.gif" alt="banner_14" /></span></label></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="fr w45per pdl10">
+				<h6 class="subtitle">배너제목선택</h6>
+				<!-- list -->
+				<table cellpadding="0" cellspacing="0" class="mrt10">
+					<colgroup>
+						<col width="25%" />
+						<col width="75%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th class="C"><span class="import">카테고리</span></th>
+							<td class="L">
+								<div class="inputbox w100per">
+									<p class="txt"></p>
+									<select>
+										<option>기타</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class="C"><span class="import">모바일사용여부</span></th>
+							<td class="L">
+								<input type="radio" name="mobile_use" id="PC" value="mobile"><label for="PC">PC</label>
+								<input type="radio" name="mobile_use" id="MOBILE" value="mobile"><label for="MOBILE">MOBILE</label>
+								<input type="radio" name="mobile_use" id="ALL" value="mobile"><label for="ALL">ALL</label>
+							</td>
+						</tr>
+						<tr>
+							<th class="C"><span class="import">조회화면</span></th>
+							<td class="L">
+								<input type="radio" name="lookup" id="login" value="view"><label for="login">로그인</label>
+								<input type="radio" name="lookup" id="main" value="view"><label for="main">메인</label>
+								<input type="radio" name="lookup" id="ALL_02" value="view"><label for="ALL_02">ALL</label>
+							</td>
+						</tr>
+						<tr>
+							<th class="C"><span class="import">제목(국문)</span></th>
+							<td class="L"><label for="txt_01"></label><input type="text" class="w100per" id="txt_01" /></td>
+						</tr>
+						<tr>
+							<th class="C"><span class="import">제목(영문)</span></th>
+							<td class="L"><label for="txt_02"></label><input type="text" class="w100per" id="txt_02" /></td>
+						</tr>
+						<tr>
+							<th class="C">주관기관(국문)</th>
+							<td class="L"><label for="txt_03"></label><input type="text" class="w100per" id="txt_03" /></td>
+						</tr>
+						<tr>
+							<th class="C">주관기관(영문)</th>
+							<td class="L"><label for="txt_04"></label><input type="text" class="w100per" id="txt_04" /></td>
+						</tr>
+						<tr>
+							<th class="C">일시장소(국문)</th>
+							<td class="L"><label for="txt_05"></label><input type="text" class="w100per" id="txt_05" /></td>
+						</tr>
+						<tr>
+							<th class="C">일시장소(영문)</th>
+							<td class="L"><label for="txt_06"></label><input type="text" class="w100per" id="txt_06" /></td>
+						</tr>
+						<tr>
+							<th class="C"><span class="import">게시기간</span></th>
+							<td class="L">
+								<input type="text" id="alarm_start" name="alarm_start" class="fl w100 date mrr5" /><label for="alarm_start"></label><span class="fl mrr5">~</span><input type="text" id="alarm_end" name="alarm_end" class="fl w100 date mrr5" /><label for="alarm_end"><a href="#" class="btn_darkblue"><span>가능일보기</span></a></label>
+							</td>
+						</tr>
+						<tr>
+							<th class="C"><span class="import">URL</span></th>
+							<td class="L"><label for="url"></label><input type="text" class="w100per" id="url" /></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="preview mrt15">
+					<div class="btnArea">
+						<div class="fl">
+							<a href="#" class="btn_white"><span>미리보기(국문)</span></a>
+							<a href="#" class="btn_white"><span>미리보기(영문)</span></a>   
+						</div>
+					</div>
+					<div class="previewArea mrt10"></div>
+					<div class="btnArea mrt10">
+						<div class="fr">
+							<a href="#" class="btn_white"><span>도움말</span></a>
+							<a href="#" class="btn_gray"><span>목록</span></a>   
+							<a href="#" class="btn_darkblue"><span>등록</span></a>   
+						</div> 
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+	<div class="board">
+		<!-- tsearchArea -->
+		<div class="tsearchArea">
+			<fieldset class="fl">
+				<div class="inputbox w100">
+					<p class="txt"></p>
+					<select>
+						<option>동(이름)</option>
+					</select>
+				</div>
+				<div class="inputbox w150">
+					<p class="txt"></p>
+					<select>
+						<option>공간명</option>
+						<option>운영자</option>
+					</select>
+				</div> 
+				<input type="text" id="search" class="w250" value="공간검색"><label for="search"></label><a class="btn_search" href="#"><img src="images/sub/btn_search.png" alt="search"></a> 
+			</fieldset>
+			<div class="fr">
+				<a href="#" class="btn_white"><span>삭제</span></a>
+				<a href="#" class="btn_darkblue"><span>등록</span></a>
+			</div>
+		</div>
+		<!-- tsearchArea //-->
+		<div class="table_top">
+			<div class="fl">
+				<p class="mrr5">총 <em>3998</em>건 (<em>11/39</em>)</p>
+				<div class="inputbox w80">
+					<p class="txt"></p>
+					<select>
+						<option>10개</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<table cellpadding="0" cellspacing="0" class="areatable">
+			<colgroup>
+				<col width="8%" />
+				<col width="*%" />
+				<col width="20%" />
+				<col width="10%" />
+			</colgroup>
+			<thead>
+				<th class="C"><input type="checkbox" id="check_all" name="check_all" /><label for="check_all"></label></th>
+				<th class="C">공간</th>
+				<th class="C">운영자</th>
+				<th class="C">위치</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="C"><input type="checkbox" id="check_01" name="check_01" /><label for="check_01"></label></td>
+					<td class="L">
+						<div class="areawrap w80per">
+							<span class="imgarea"><!--<img src="images/sub/img_sample.gif" alt="샘플이미지" />--></span>
+							<p class="title">[101]공간</p>
+							<p>신청 : 14일전 / 공간사용 : 가능</p>
+						</div>
+						<a href="#" class="btn_darkblue"><span>사용관리</span></a>
+					</td>
+					<td class="C">홍길동(총무부)</td>
+					<td class="C">101</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="check_02" name="check_02" /><label for="check_02"></label></td>
+					<td class="L">
+						<div class="areawrap w80per">
+							<span class="imgarea"><!--<img src="images/sub/img_sample.gif" alt="샘플이미지" />--></span>
+							<p class="title">[101]공간</p>
+							<p>신청 : 14일전 / 공간사용 : 가능</p>
+						</div>
+						<a href="#" class="btn_darkblue"><span>사용관리</span></a>
+					</td>
+					<td class="C">홍길동(총무부)</td>
+					<td class="C">101</td>
+				</tr>
+				<tr>
+					<td class="C"><input type="checkbox" id="check_03" name="check_03" /><label for="check_03"></label></td>
+					<td class="L">
+						<div class="areawrap w80per">
+							<span class="imgarea"><!--<img src="images/sub/img_sample.gif" alt="샘플이미지" />--></span>
+							<p class="title">[101]공간</p>
+							<p>신청 : 14일전 / 공간사용 : 가능</p>
+						</div>
+						<a href="#" class="btn_darkblue"><span>사용관리</span></a>
+					</td>
+					<td class="C">홍길동(총무부)</td>
+					<td class="C">101</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="tcontrol mrt15">
+			<div class="paging">
+				<a href="#"><img src="images/sub/page_first.png" alt="첫페이지로이동" /></a><a href="#"><img src="images/sub/page_prev.png" alt="이전페이지로이동" /></a><a href="#" class="on">11</a><a href="#">12</a><a href="#">13</a><a href="#">14</a><a href="#">15</a><a href="#">16</a><a href="#">17</a><a href="#">18</a><a href="#">19</a><a href="#">20</a><a href="#"><img src="images/sub/page_next.png" alt="다음페이지로이동" /></a><a href="#"><img src="images/sub/page_last.png" alt="마지막페이지로이동" /></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

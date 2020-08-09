@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: mySNU ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="popup">
+	<h2>메뉴선택</h2>
+	<div class="popup_wrap">
+		<div class="contentswrap board portletstore">
+			<div class="tsearchArea">
+				<fieldset>
+					<input type="text" id="search" class="w100per" value="메뉴명을 입력하세요."><label for="search"></label><a class="btn_search" href="#"><img src="images/sub/btn_search.png" alt="search"></a> 
+				</fieldset>
+			</div>
+			<div class="w100per C">
+				<div class="fl w45per">
+					<h6 class="subtitle">메뉴선택</h6>
+					<div class="scroll menuList">
+						<ul class="depth01">
+							<li><input type="checkbox" id="menu_01" name="menu_01" /><label for="menu_01"></label><a href="#">1Depth 1</a>
+								<ul class="depth02">
+									<li><input type="checkbox" id="menu_01_01" name="menu_01_01" /><label for="menu_01_01"></label><a href="#">2Depth 1</a></li>
+									<li><input type="checkbox" id="menu_01_02" name="menu_01_02" /><label for="menu_01_02"></label><a href="#">2Depth 2</a>
+										<ul class="depth03">
+											<li><input type="checkbox" id="menu_01_02_01" name="menu_01_02_01" /><label for="menu_01_02_01"></label><a href="#">3Depth 1</a></li>
+											<li><input type="checkbox" id="menu_01_02_02" name="menu_01_02_02" /><label for="menu_01_02_02"></label><a href="#">3Depth 2</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><input type="checkbox" id="menu_02" name="menu_02" /><label for="menu_02"></label><a href="#">1Depth 2</a>
+								<ul class="depth02">
+									<li><input type="checkbox" id="menu_02_01" name="menu_02_01" /><label for="menu_02_01"></label><a href="#">2Depth 1</a></li>
+									<li><input type="checkbox" id="menu_02_02" name="menu_02_02" /><label for="menu_02_02"></label><a href="#">2Depth 2</a></li>
+									<li><input type="checkbox" id="menu_02_03" name="menu_02_03" /><label for="menu_02_03"></label><a href="#">2Depth 3</a></li>
+								</ul>
+							</li>
+							<li><input type="checkbox" id="menu_03" name="menu_03" /><label for="menu_03"></label><a href="#">1Depth 3</a></li>
+							<li><input type="checkbox" id="menu_04" name="menu_04" /><label for="menu_04"></label><a href="#">1Depth 4</a></li>
+							<li><input type="checkbox" id="menu_05" name="menu_05" /><label for="menu_05"></label><a href="#">1Depth 5</a></li>
+							<li><input type="checkbox" id="menu_06" name="menu_06" /><label for="menu_06"></label><a href="#">1Depth 6</a></li>
+							<li><input type="checkbox" id="menu_07" name="menu_07" /><label for="menu_07"></label><a href="#">1Depth 7</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="fl w10per">
+					<div class="arr_btn">
+						<p><a href="#"><img src="images/sub/btn_date_next.png" alt="메뉴선택" /></a></p>
+						<p><a href="#"><img src="images/sub/btn_date_prev.png" alt="메뉴선택취소" /></a></p>
+					</div>
+				</div>
+				<div class="fr w45per">
+					<h6 class="subtitle">선택한 메뉴</h6>
+				  <div class="scroll menuList">
+						<ul>
+							<li><input type="checkbox" id="check_menu_01" name="check_menu_01" /><label for="check_menu_01"></label><a href="#">1Depth 1</a></li>
+							<li><input type="checkbox" id="check_menu_02" name="check_menu_02" /><label for="check_menu_02"></label>
+								<input type="text" id="check_menu_02_title" name="check_menu_02_title" class="w200" value="2Depth 1" /> <label for="check_menu_02_title"></label>
+							</li>
+							<li><input type="checkbox" id="check_menu_03" name="check_menu_03" /><label for="check_menu_03"></label><a href="#">1Depth 3</a></li>
+							<li><input type="checkbox" id="check_menu_04" name="check_menu_04" /><label for="check_menu_04"></label><a href="#">1Depth 4</a></li>
+							<li><input type="checkbox" id="check_menu_05" name="check_menu_05" /><label for="check_menu_05"></label><a href="#">1Depth 5</a></li>
+							<li><input type="checkbox" id="check_menu_06" name="check_menu_06" /><label for="check_menu_06"></label><a href="#">1Depth 6</a></li>
+							<li><input type="checkbox" id="check_menu_07" name="check_menu_07" /><label for="check_menu_07"></label><a href="#">1Depth 7</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="btnArea mrt15">
+				<div class="C">
+					<a href="#" class="btn_darkblue"><span>확인</span></a>
+					<a href="#" class="btn_white refresh"><span>초기화</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn_close"><img src="images/sub/popup_btn_close.png" alt="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+
+
+
